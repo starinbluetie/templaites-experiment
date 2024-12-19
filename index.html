@@ -7,58 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Organiza tus prompts y maximiza ChatGPT</h1>
-        <p>Crea, organiza y comparte tus prompts fácilmente</p>
-    </header>
-    <nav>
-        <ul class="tab-nav">
-            <li class="tab-item" data-tab="create-template">Crear Plantilla</li>
-            <li class="tab-item" data-tab="organize-templates">Organizar Plantillas</li>
-            <li class="tab-item" data-tab="version-history">Historial de Versiones</li>
-        </ul>
-    </nav>
-    <main>
-        <section id="create-template" class="tab-content">
-            <h2>Creación de Plantillas</h2>
-            <form id="template-form">
-                <input type="text" id="template-input" placeholder="Titulo del template" required>
-                <textarea id="prompt-list-input" class="prompt-list" placeholder="Lista de Prompts" required></textarea>
-                <input type="text" id="tags-input" placeholder="Etiquetas/Categorías" required>
-                <button type="submit">Guardar</button>
-            </form>
-        </section>
-        <section id="edit-template" class="tab-content" style="display:none;">
-            <h2>Edición de Plantillas</h2>
-            <div id="template-preview">
-                <!-- Vista previa del template -->
-            </div>
-            <input type="text" id="edit-template-input" placeholder="Edita tu template aquí" required>
-            <textarea id="edit-prompt-list-input" class="prompt-list" placeholder="Lista de Prompts" required></textarea>
-            <input type="text" id="edit-tags-input" placeholder="Edita etiquetas/categorías" required>
-            <button id="save-changes-button">Guardar Cambios</button>
-            <button id="delete-template-button-main" class="delete">Eliminar Plantilla</button>
-            <button id="cancel-edit-button" class="cancel">Cancelar</button>
-        </section>
-        <section id="organize-templates" class="tab-content" style="display:none;">
-            <h2>Organización</h2>
-            <input type="text" id="filter-input" placeholder="Filtrar por etiquetas/categorías">
-            <select id="sort-select">
-                <option value="date">Ordenar por fecha de creación</option>
-                <option value="name">Ordenar por nombre</option>
-            </select>
-            <ul id="template-list">
-                <!-- Lista de plantillas -->
-            </ul>
-        </section>
-        <section id="version-history" class="tab-content" style="display:none;">
-            <h2>Historial de Versiones</h2>
-            <ul id="version-list">
-                <!-- Lista de versiones anteriores -->
-            </ul>
-            <button id="restore-version-button">Restaurar Versión</button>
-        </section>
-    </main>
-    <script type="module" src="scripts.js"></script>
+    <div id="root"></div>
+    <!-- Scripts will be injected by React -->
 </body>
 </html>
